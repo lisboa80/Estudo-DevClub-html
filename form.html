@@ -1,0 +1,62 @@
+<!-- Forms
+ captura de dados de entrada 
+ input entrada
+
+ Action ->n define pra qual url sera enviados os dados , vazio para mesma url methor
+
+      -GET
+       formulario do tipo informacoes nao sigilosas Ex: para sites de endrerecos envio de fotos aqeuivos 
+       Obs: ela fica descrita na url apos envio
+
+      -POST
+
+      formulario do tipo informacoes nao sigilosas Ex: conta de bancos senhas dados sigilosos
+      Obs: na url nao tem dados apos envio. 
+
+
+
+      Button
+
+      - submit
+      - button -  e o mais usados!
+      - reset
+
+<form action="" method="get">
+   <button type="button">Enviar dados</button>
+       
+</form>
+
+
+      ATENCAO!!!!
+
+   e necessario ter enctype para formularios que envia arquivos de videos e imagens documentos!
+-->
+
+
+
+
+<form action="" method="get" enctype="multipart/form-data">
+  <h1>Digite seu Endereco</h1>
+  <label>
+    Rua:
+    <input type="text" name="rua" autocomplete="street-address" />
+  </label>
+
+  <label>
+    Numero
+    <input type="number" name="numero" />
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" />
+  </label>
+
+  <label>
+    Foto:
+    <input type="file" name="arquivo" />
+  </label>
+
+  <button type="reset">Reset</button>
+  <button type="submit">Enviar dados</button>
+</form>
